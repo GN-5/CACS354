@@ -1,3 +1,7 @@
 #ignore all .DS_store files for MAC
 
 *.DS_store
+
+#ignore all .class files on folders.
+
+*.class
