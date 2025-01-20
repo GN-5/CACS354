@@ -1,0 +1,3 @@
+#ignore all .DS_store files for MAC
+
+*.DS_store
