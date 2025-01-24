@@ -133,7 +133,7 @@ public class RegisterView extends JFrame {
         JLabel lblLanguage = getLabel("Languages:");
         window.add(lblLanguage, gbc);
 
-        // First row of checkboxes
+        // Checkbox 1
         gbc.gridx = 1;
         gbc.gridy = 5;
         JCheckBox cBoxJava = new JCheckBox("Java");
@@ -144,7 +144,7 @@ public class RegisterView extends JFrame {
         gbc.gridy = 5;
         window.add(cBoxPython, gbc);
 
-        // Second row of checkboxes
+        // Checkbox
         gbc.gridx = 1;
         gbc.gridy = 6;
         JCheckBox cBoxC = new JCheckBox("C");
