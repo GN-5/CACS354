@@ -10,9 +10,18 @@ import java.awt.Insets;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
 import javax.swing.JTextArea;
 
 public class ContactView extends JFrame {
+
+    JMenuBar jMB = new JMenuBar();
+    JMenu jMenu1 = new JMenu("Action");
+    JMenu jMenu2 = new JMenu("Help");
+    JMenuItem jMItem1 = new JMenuItem("Save");
+    JMenuItem jMItem2 = new JMenuItem("Exit");
 
     public ContactView() {
         setSize(600, 500);
@@ -87,6 +96,13 @@ public class ContactView extends JFrame {
         gbc.anchor = GridBagConstraints.CENTER;
         JButton submitButton = getButton();
         window.add(submitButton, gbc);
+
+        jMenu1.add(jMItem1);
+        jMenu1.add(jMItem2);
+        jMB.add(jMenu1);
+        jMB.add(jMenu2);
+
+        setJMenuBar(jMB);
     }
 
     public static void main(String[] args) {
