@@ -1,7 +1,9 @@
 package AddressBook;
 
 public class Register {
+    public int id;
     private String name;
+    private String email;
     private String address;
     private float latitude;
     private float longitude;
@@ -9,9 +11,12 @@ public class Register {
     private String[] languages;
     private String bloodGroup;
 
-    public Register(String name, String address, float latitude, float longitude, String gender, String[] languages,
+    Register(int id, String name, String email, String address, float latitude, float longitude, String gender,
+            String[] languages,
             String bloodGroup) {
+        this.id = id;
         this.name = name;
+        this.email = email;
         this.address = address;
         this.latitude = latitude;
         this.longitude = longitude;
@@ -21,8 +26,16 @@ public class Register {
     }
 
     // Getters
+    public int getID() {
+        return id;
+    }
+
     public String getName() {
         return name;
+    }
+
+    public String getEmail() {
+        return email;
     }
 
     public String getAddress() {
@@ -50,8 +63,16 @@ public class Register {
     }
 
     // Setters
+    public void setID(int id) {
+        this.id = id;
+    }
+
     public void setName(String name) {
         this.name = name;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public void setAddress(String address) {
