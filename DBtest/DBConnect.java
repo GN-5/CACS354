@@ -10,7 +10,7 @@ public class DBConnect {
     private static Connection con;
     static ResultSet rs;
 
-    static String db = "jdbc:mysql//localhost:3306/addressbookdb";
+    static String db = "jdbc:mysql://localhost:3306/addressbookdb";
     static String userName = "root";
     static String password = "12345678";
 
