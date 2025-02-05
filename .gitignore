@@ -5,3 +5,6 @@
 #ignore all .class files on folders.
 
 *.class
+
+
+/mysql-connector-j-8.0.33
