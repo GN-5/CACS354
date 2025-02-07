@@ -1,0 +1,9 @@
+{
+    "java.project.sourcePaths": [
+        ".",
+        "CACS354"
+    ],
+    "java.project.referencedLibraries": [
+        "/usr/local/mysql-connector-java.jar"
+    ]
+}

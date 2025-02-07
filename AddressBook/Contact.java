@@ -1,17 +1,18 @@
 package AddressBook;
 
-public class Register {
+public class Contact {
     public int id;
     private String name;
     private String email;
     private String address;
     private float latitude;
     private float longitude;
+    private String location;
     private String gender;
     private String[] languages;
     private String bloodGroup;
 
-    Register(int id, String name, String email, String address, float latitude, float longitude, String gender,
+    Contact(int id, String name, String email, String address, float latitude, float longitude, String gender,
             String[] languages,
             String bloodGroup) {
         this.id = id;
@@ -20,6 +21,7 @@ public class Register {
         this.address = address;
         this.latitude = latitude;
         this.longitude = longitude;
+        this.location = latitude + " | " + longitude;
         this.gender = gender;
         this.languages = languages;
         this.bloodGroup = bloodGroup;
@@ -42,12 +44,9 @@ public class Register {
         return address;
     }
 
-    public float getLatitude() {
-        return latitude;
-    }
-
-    public float getLongitude() {
-        return longitude;
+    public String getLocation() {
+        String location = this.latitude + " | " + this.longitude;
+        return location;
     }
 
     public String getGender() {
@@ -79,12 +78,10 @@ public class Register {
         this.address = address;
     }
 
-    public void setLatitude(float latitude) {
-        this.latitude = latitude;
-    }
+    public void setLocation(float latitude, float longitude) {
+        String location = latitude + " | " + longitude;
+        this.location = location;
 
-    public void setLongitude(float longitude) {
-        this.longitude = longitude;
     }
 
     public void setGender(String gender) {
