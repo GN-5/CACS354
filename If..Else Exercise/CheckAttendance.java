@@ -5,7 +5,7 @@ public class CheckAttendance {
         Scanner input = new Scanner(System.in);
 
         int classHeld, classAttended;
-        float attendance;
+        int attendance;
 
         System.out.println("Enter the number of classes held : ");
         classHeld = input.nextInt();
@@ -13,9 +13,9 @@ public class CheckAttendance {
         System.out.println("Enter the number of classes attended : ");
         classAttended = input.nextInt();
 
-        attendance = (float) ((classAttended / classHeld) * 100);
+        attendance = (classAttended / classHeld);
 
-        if (attendance < 75) {
+        if (attendance < 0.75) {
             System.out.println("You are not allowed to sit in the examination.");
         } else {
             System.out.println("You are allowed to sit in the examination");
