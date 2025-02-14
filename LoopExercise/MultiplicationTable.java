@@ -1,3 +1,7 @@
+/*
+ * @Author - Gaurab Neupane
+ */
+
 package LoopExercise;
 
 import java.util.Scanner;

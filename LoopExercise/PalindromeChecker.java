@@ -14,7 +14,8 @@ public class PalindromeChecker {
             reversed += word.charAt(i);
         }
 
-        if (input.equals(reversed)) {
+        System.out.println(reversed);
+        if (word.equals(reversed)) {
             System.out.println("The string is a palindrome.");
         } else {
             System.out.println("The string is not a palindrome.");
