@@ -1,0 +1,23 @@
+package MethodExercises;
+
+import java.util.Scanner;
+
+public class FactorialMethod {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        int num = input.nextInt();
+
+        System.out.println("The factorial is : " + factorial(num));
+
+        input.close();
+    }
+
+    public static int factorial(int num) {
+        int factorial = 0;
+        for (int i = 1; i <= num; i++) {
+            factorial *= num;
+        }
+        return factorial;
+    }
+}
