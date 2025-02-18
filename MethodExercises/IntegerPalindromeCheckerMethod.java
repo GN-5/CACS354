@@ -6,6 +6,7 @@ public class IntegerPalindromeCheckerMethod {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
+        System.out.print("Enter a integer: ");
         int num = input.nextInt();
 
         if (integerPalindromeChecker(num)) {

@@ -6,6 +6,7 @@ public class FactorialMethod {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
+        System.out.print("Enter a number: ");
         int num = input.nextInt();
 
         System.out.println("The factorial is : " + factorial(num));
@@ -14,9 +15,9 @@ public class FactorialMethod {
     }
 
     public static int factorial(int num) {
-        int factorial = 0;
+        int factorial = 1;
         for (int i = 1; i <= num; i++) {
-            factorial *= num;
+            factorial *= i;
         }
         return factorial;
     }
