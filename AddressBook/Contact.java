@@ -45,7 +45,6 @@ public class Contact {
     }
 
     public String getLocation() {
-        String location = this.latitude + " | " + this.longitude;
         return location;
     }
 

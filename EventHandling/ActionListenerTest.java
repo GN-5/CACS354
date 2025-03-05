@@ -7,17 +7,18 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 public class ActionListenerTest extends JFrame implements ActionListener {
 
     JTextField jTFName = new JTextField(8);
     JButton jBtnSubmit = new JButton("Submit");
-    JButton jBtnSave = new JButton("Save");
+    JButton jBtnDelete = new JButton("Delete");
 
     public ActionListenerTest() {
         jBtnSubmit.addActionListener(this);
-        jBtnSave.addActionListener(this);
+        jBtnDelete.addActionListener(this);
         setResizable(false);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
@@ -31,7 +32,7 @@ public class ActionListenerTest extends JFrame implements ActionListener {
         window.setLayout(new FlowLayout());
         window.add(jTFName);
         window.add(jBtnSubmit);
-        window.add(jBtnSave);
+        window.add(jBtnDelete);
     }
 
     public static void main(String[] args) {
@@ -41,6 +42,13 @@ public class ActionListenerTest extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         System.out.println(e.getActionCommand());
-        System.out.println(jTFName.getText());
+        if (e.getActionCommand().equals("Delete")) {
+            int confirm = JOptionPane.showConfirmDialog(jBtnDelete, "Do you want to delete?");
+            System.out.println(confirm);
+        } else {
+            JOptionPane.showMessageDialog(jBtnDelete, "Deleted");
+        }
+        String input = JOptionPane.showInputDialog("Enter a Number ");
+        System.out.println(input);
     }
 }

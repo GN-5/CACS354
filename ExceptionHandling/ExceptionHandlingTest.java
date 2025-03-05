@@ -51,6 +51,7 @@ public class ExceptionHandlingTest {
             System.out.println("ArrayOutOfBounds Exception was caught.");
         }
 
+        //Custom Exception
         int age = 17;
         try {
             validateAge(age);
