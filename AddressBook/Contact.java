@@ -12,7 +12,7 @@ public class Contact {
     private String[] languages;
     private String bloodGroup;
 
-    Contact(int id, String name, String email, String address, float latitude, float longitude, String gender,
+    public Contact(int id, String name, String email, String address, float latitude, float longitude, String gender,
             String[] languages,
             String bloodGroup) {
         this.id = id;
@@ -25,6 +25,13 @@ public class Contact {
         this.gender = gender;
         this.languages = languages;
         this.bloodGroup = bloodGroup;
+    }
+
+    public Contact(int id, String name, String email, String gender) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.gender = gender;
     }
 
     // Getters
@@ -93,5 +100,26 @@ public class Contact {
 
     public void setBloodGroup(String bloodGroup) {
         this.bloodGroup = bloodGroup;
+    }
+
+    public float getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(float latitude) {
+        this.latitude = latitude;
+    }
+
+    public float getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(float longitude) {
+        this.longitude = longitude;
+    }
+
+    public String toString() {
+        return "ID: " + id + "\nName: " + name + "\nEmail: " + email + "\nAddress: " + address + "\nLocation: "
+                + location + "\nGender";
     }
 }

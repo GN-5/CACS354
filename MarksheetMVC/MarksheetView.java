@@ -76,7 +76,7 @@ public class MarksheetView extends JFrame {
         return Double.parseDouble(dbField.getText());
     }
 
-    // ----- Setters for output -----
+    // setters
     public void setTotalMarks(double total) {
         totalMarksLabel.setText(String.valueOf(total));
     }
