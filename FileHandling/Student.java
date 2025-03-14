@@ -12,7 +12,6 @@ public class Student implements Serializable {
     private String email;
 
     public Student() {
-
     }
 
     public Student(int rollNumber, String name, String email) {
@@ -21,7 +20,28 @@ public class Student implements Serializable {
         this.email = email;
     }
 
-    public String getName() {
-        return this.name;
+    public int getRollNumber() {
+        return rollNumber;
     }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setRollNumber(int rollNumber) {
+        this.rollNumber = rollNumber;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
 }

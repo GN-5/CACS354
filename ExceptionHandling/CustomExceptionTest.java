@@ -9,6 +9,7 @@ public class CustomExceptionTest {
 
         try {
             int c = a / b;
+            System.out.println(c);
         } catch (Exception e) {
             throw new DivideByZeroException("Dont divide by zero.");
         } finally {

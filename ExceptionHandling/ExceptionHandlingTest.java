@@ -22,12 +22,14 @@ public class ExceptionHandlingTest {
         File f = new File("myfile.txt");
         try {
             FileReader fr = new FileReader(f);
+            fr.close();
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
             // always executes
             // resource save
             System.out.println("..inside finally block..");
+
         }
 
         // 2.2 Unchecked Exception (Runtime Exception)
@@ -51,7 +53,7 @@ public class ExceptionHandlingTest {
             System.out.println("ArrayOutOfBounds Exception was caught.");
         }
 
-        //Custom Exception
+        // Custom Exception
         int age = 17;
         try {
             validateAge(age);
