@@ -19,10 +19,11 @@ public class Calculator extends JFrame implements ActionListener {
     }
 
     void prepareGUI() {
+        Container window = getContentPane();
         textField = new JTextField();
         textField.setEditable(false);
         textField.setHorizontalAlignment(JTextField.RIGHT);
-        add(textField, BorderLayout.NORTH);
+        window.add(textField, BorderLayout.NORTH);
         JPanel panel = new JPanel();
         panel.setLayout(new GridLayout(4, 4));
 
@@ -34,7 +35,7 @@ public class Calculator extends JFrame implements ActionListener {
             panel.add(button);
         }
 
-        add(panel, BorderLayout.CENTER);
+        window.add(panel, BorderLayout.CENTER);
     }
 
     @Override
