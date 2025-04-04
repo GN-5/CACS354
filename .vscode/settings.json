@@ -5,5 +5,7 @@
     ],
     "java.project.referencedLibraries": [
         "/usr/local/mysql-connector-java.jar"
-    ]
+    ],
+    "maven.view": "hierarchical",
+    "java.configuration.updateBuildConfiguration": "interactive"
 }
