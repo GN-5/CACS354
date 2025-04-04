@@ -10,3 +10,5 @@
 /mysql-connector-j-8.0.33
 /.vscode
 .qodo
+
+/webapp-demo/target
